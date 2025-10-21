@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body h1{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 15px;
+}
+form{
+
+display: flex;
+margin: 15px;
+}
+
+form input{
+    padding: 5px;
+    margin: 1px;
+    border-radius: 4px
+}
+
+#botao{
+    background-color: #338FEA;
+    color: white;
+    margin-left: 6px;
+    width: 100px;
+}
+
+.total{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.total p{
+    padding: 3px;
+}
+
