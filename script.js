@@ -76,8 +76,6 @@ const botaoAdicionar=document.getElementById('botao');
 
     function adicionarTarefa(e){
 
-        
-
         const nome=inputNome.value.trim();
         const valor=parseFloat(inputValor.value);
 
@@ -117,7 +115,7 @@ const botaoAdicionar=document.getElementById('botao');
                 }
             });
         });
-        form.addEventListener('submit', e => e.preventDefault());
+       
 
         renderizar();
    
