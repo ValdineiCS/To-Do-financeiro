@@ -1,40 +1,122 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body h1{
-    font-family: 'Courier New', Courier, monospace;
-    margin: 15px;
-}
-form{
-
-display: flex;
-margin: 15px;
-}
-
-form input{
-    padding: 5px;
-    margin: 1px;
-    border-radius: 4px
-}
-
-#botao{
-    background-color: #338FEA;
-    color: white;
-    margin-left: 6px;
-    width: 100px;
-}
-
-.total{
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 100px;
+    padding: 20px;
 }
 
-.total p{
-    padding: 3px;
+h1 {
+    margin-bottom: 20px;
+    color: #CAAB66;
+    text-align: center;
 }
 
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+form input[type="text"],
+form input[type="number"] {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    width: 200px;
+    outline: none;
+}
+
+#botao {
+    background-color: #CAAB66;
+    color: #121212;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+#botao:hover {
+    background-color: #b58f4f;
+}
+
+ul#lista {
+    list-style: none;
+    width: 100%;
+    max-width: 600px;
+    padding: 0;
+}
+
+li.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e1e;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+li.item:hover {
+    background-color: #292929;
+}
+
+.info {
+    display: flex;
+    gap: 20px;
+    font-size: 16px;
+}
+
+.botoes button {
+    margin-left: 5px;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+button.concluir {
+    background-color: #338FEA;
+    color: #fff;
+}
+
+button.concluir:hover {
+    background-color: #1c6ed1;
+}
+
+button.desfazer {
+    background-color: #888888;
+    color: #fff;
+}
+
+button.desfazer:hover {
+    background-color: #666666;
+}
+
+button.excluir {
+    background-color: #ff5555;
+    color: #fff;
+}
+
+button.excluir:hover {
+    background-color: #cc4444;
+}
+
+.total {
+    margin-top: 20px;
+    display: flex;
+    gap: 40px;
+    font-size: 18px;
+}
+
+.total span {
+    font-weight: bold;
+    color: #CAAB66;
+}
