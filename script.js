@@ -81,10 +81,12 @@ const botaoAdicionar=document.getElementById('botao');
 
         if(!nome){
             alert('Digite o nome da tarefa.');
+            inputNome.focus();
             return;
         }
         if(isNaN(valor) ||valor<=0){
-            alert('Digite um valor válido (maior que 0).');
+            alert('Digite um valor válido (maior que 0).')
+            inputNome.focus();;
             return;
         }
 
@@ -113,7 +115,9 @@ const botaoAdicionar=document.getElementById('botao');
                     e.preventDefault();
                 adicionarTarefa(e);
                 }
+                
             });
+            inputNome.focus();
         });
        
 
