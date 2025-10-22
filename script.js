@@ -76,7 +76,7 @@ const botaoAdicionar=document.getElementById('botao');
 
     function adicionarTarefa(e){
 
-        if(e) e.preventDefault();
+        
 
         const nome=inputNome.value.trim();
         const valor=parseFloat(inputValor.value);
